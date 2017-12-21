@@ -13,13 +13,13 @@ public class Main {
         byte myByteMin = -128; //bytes are more efficient than ints
         byte myByteMax = 127; //takes up way less space than an int
         byte myNewByteValue = (byte) (myByteMin / 2);
-        System.out.println("\n" + "myNewByteValue: " + myNewByteValue + "\n");
+//        System.out.println("\n" + "myNewByteValue: " + myNewByteValue + "\n");
 
         // short has a width of 16 (2^15)
         short myShortMin = -32768;
         short myShortMax = 32767;
         short myNewShortValue = (short) (myShortMin / 2);
-        System.out.println("myNewShortValue: " + myNewShortValue + "\n");
+//        System.out.println("myNewShortValue: " + myNewShortValue + "\n");
 
         // long has a width of 64 - max size = 2^63
         long myLongMin = -9_223_372_036_854_775_808L;
@@ -48,14 +48,18 @@ public class Main {
         double myDoubleValue = 5d / 3d; // 16 decimal digits
         //if double or float aren't specified then double is assumed by the compiler
 
-        System.out.println("myIntValue: " + myIntValue + "\n");
-        System.out.println("myFloatValue: " + myFloatValue + "\n");
-        System.out.println("myDoubleValue: " + myDoubleValue + "\n");
+//        System.out.println("myIntValue: " + myIntValue + "\n");
+//        System.out.println("myFloatValue: " + myFloatValue + "\n");
+//        System.out.println("myDoubleValue: " + myDoubleValue + "\n");
 
-        // Challenge: Convert a given number of lbs -> kg
+        // Challenge: Convert a given number of lbs -> kg (1 lb is equal to 0.45359237 kg)
         // 1. Create a variable to store the number of lbs
+        int numLb = 165;
         // 2. Calculate the number of kg for the result of (1.) and store in a variable
+        double numKg = (numLb * 0.45359237d);
         // 3. Print out the result
-        // 1 lb is equal to 0.45359237 kg
+        System.out.println("numLb: " + numLb + "lb");
+        System.out.println("numKg: " + numKg + "kg");
+        double pi = 3.141_5927d;
     }
 }
