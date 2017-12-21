@@ -40,6 +40,22 @@ public class Main {
         System.out.println("total = newLong + (10 * newByte) + newShort + newInt: " + total + "\n");
 
         //FLOAT & DOUBLE
-        
+        //width of int = 32 (4 bytes)
+        int myIntValue = 5 / 3;
+        // width of float = 32 (4 bytes)
+        float myFloatValue = 5f / 3f; // 7 decimal digits
+        // width of a double = 64 (8 bytes)
+        double myDoubleValue = 5d / 3d; // 16 decimal digits
+        //if double or float aren't specified then double is assumed by the compiler
+
+        System.out.println("myIntValue: " + myIntValue + "\n");
+        System.out.println("myFloatValue: " + myFloatValue + "\n");
+        System.out.println("myDoubleValue: " + myDoubleValue + "\n");
+
+        // Challenge: Convert a given number of lbs -> kg
+        // 1. Create a variable to store the number of lbs
+        // 2. Calculate the number of kg for the result of (1.) and store in a variable
+        // 3. Print out the result
+        // 1 lb is equal to 0.45359237 kg
     }
 }
