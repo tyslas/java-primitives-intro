@@ -3,7 +3,7 @@ package com.tito;
 public class Main {
 
     public static void main(String[] args) {
-
+        //BYTE, SHORT, INT & LONG
         // int has a width of 32 - max size = 2^31
         int myMinValue = -2_147_483_648; //use _ to make numbers easier to read!
         int myMaxValue = 2147483647;
@@ -13,13 +13,13 @@ public class Main {
         byte myByteMin = -128; //bytes are more efficient than ints
         byte myByteMax = 127; //takes up way less space than an int
         byte myNewByteValue = (byte) (myByteMin / 2);
-        System.out.println("myNewByteValue: " + myNewByteValue);
+        System.out.println("\n" + "myNewByteValue: " + myNewByteValue + "\n");
 
         // short has a width of 16 (2^15)
         short myShortMin = -32768;
         short myShortMax = 32767;
         short myNewShortValue = (short) (myShortMin / 2);
-        System.out.println("myNewShortValue: " + myNewShortValue);
+        System.out.println("myNewShortValue: " + myNewShortValue + "\n");
 
         // long has a width of 64 - max size = 2^63
         long myLongMin = -9_223_372_036_854_775_808L;
@@ -37,6 +37,9 @@ public class Main {
         int newInt = 83_555;
         long newLong = 50_000L;
         long total = (newLong + (10 * newByte) + newShort + newInt);
-        System.out.println("total = newLong + (10 * newByte) + newShort + newInt: " + total);
+        System.out.println("total = newLong + (10 * newByte) + newShort + newInt: " + total + "\n");
+
+        //FLOAT & DOUBLE
+        
     }
 }
