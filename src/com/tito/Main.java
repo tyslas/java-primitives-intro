@@ -58,8 +58,21 @@ public class Main {
         // 2. Calculate the number of kg for the result of (1.) and store in a variable
         double numKg = (numLb * 0.45359237d);
         // 3. Print out the result
-        System.out.println("numLb: " + numLb + "lb");
-        System.out.println("numKg: " + numKg + "kg");
+//        System.out.println("numLb: " + numLb + "lb");
+//        System.out.println("numKg: " + numKg + "kg");
         double pi = 3.141_5927d;
+
+        //CHAR & BOOLEAN
+        // width of 16 (2 bytes)
+        char myChar = '\u03A8'; // Ψ can only be a single character and can use uni-code
+        System.out.println("unicode output 1: " + myChar);
+
+        boolean myBoolean = true;
+        //CHALLENGE: print the 'registered' symbol to the screen
+        // 1. find the code for the registered symbol on the same line as the copyright symbol
+        // 2. create a variable of type char and assign it the unicode value for that symbol
+        // 3. print the variable to the screen
+        char newChar = '\u00AE'; // ®
+        System.out.println("unicode output 2: " + newChar);
     }
 }
