@@ -65,7 +65,7 @@ public class Main {
         //CHAR & BOOLEAN
         // width of 16 (2 bytes)
         char myChar = '\u03A8'; // Ψ can only be a single character and can use uni-code
-        System.out.println("unicode output 1: " + myChar);
+//        System.out.println("unicode output 1: " + myChar);
 
         boolean myBoolean = true;
         //CHALLENGE: print the 'registered' symbol to the screen
@@ -73,6 +73,22 @@ public class Main {
         // 2. create a variable of type char and assign it the unicode value for that symbol
         // 3. print the variable to the screen
         char newChar = '\u00AE'; // ®
-        System.out.println("unicode output 2: " + newChar);
+//        System.out.println("unicode output 2: " + newChar);
+
+        //STRING type -> not a primitive type, but used very frequently
+        String myString = "this is a string";
+        System.out.println("myString: " + myString);
+        myString = myString + ", and this is another piece";
+        System.out.println("myString: " + myString);
+
+        String numString = "250.55";
+        numString = numString + "49.95";
+        System.out.println("the result is: " + numString);
+
+        String lastString = "10";
+        int stringInt = 50;
+        lastString += stringInt;
+        // the int type is promoted to a String type
+        System.out.println("int + string: " + lastString);
     }
 }
